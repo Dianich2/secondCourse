@@ -11,19 +11,6 @@ namespace Lab3
 
         public Production product = new Production();
         public Developer developer;
-
-        /*private class Node
-        {
-            public T Value { get; set; }
-            public Node Next { get; set; }
-
-            public Node(T value)
-            {
-                Value = value;
-                Next = null;
-            }
-        }*/
-
         private Node<T> head;
 
         public bool isEmpty => head == null;
@@ -72,8 +59,6 @@ namespace Lab3
             return result.ToString();
 
         }
-
-
 
         public static OneDirectionalList<T> operator +(OneDirectionalList<T> list1, OneDirectionalList<T> list2)
         {

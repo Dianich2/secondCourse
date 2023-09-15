@@ -53,7 +53,7 @@ namespace Lab3
             return result;
         }
 
-        public static void deleteElement(OneDirectionalList<int> list, object element)
+        public static void deleteElement(this OneDirectionalList<int> list, object element)
         {
             Node<int> current = list.getHead();
             while (current.Next != null)
@@ -67,7 +67,7 @@ namespace Lab3
         }
 
 
-        public static int? extractLastNubmer(string input)
+        public static int? extractLastNubmer(this string str, string input)
         {
             int? lastNumber = null;
             MatchCollection matches = Regex.Matches(input, @"\d+");

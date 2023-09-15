@@ -11,6 +11,7 @@ namespace Lab3
     {
         public static void Main(string[] args)
         {
+            
             OneDirectionalList<int> list1 = new OneDirectionalList<int>();
             list1.Add(1);
             list1.Add(2);
@@ -41,10 +42,12 @@ namespace Lab3
             Console.WriteLine(StaticOperation.countListElentsAmount(list1));
             Console.WriteLine(StaticOperation.countMaxMinDifference(list1));
             Console.WriteLine(list1);
-            StaticOperation.deleteElement(list1, 2);
+            list1.deleteElement(2);
             Console.WriteLine(list1);
 
-            int? number = StaticOperation.extractLastNubmer("he5llo wor78ld");
+            string str = "hel4lo wor2938ld!";
+
+            int? number = str.extractLastNubmer(str);
             Console.WriteLine(number);
         }
 

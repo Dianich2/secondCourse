@@ -62,38 +62,47 @@ namespace Lab2
         public void setName(string name) {
             this.name = name;
         }
+
         public string getName()
         {
             return string.Copy(name);
         }
+
         public void setUPC(int UPC)
         {
             this.UPC = UPC;
         }
+
         public int getUPC()
         {
             return this.UPC;
         }
+
         public string getProducer()
         {
             return producer;
         }
+
         public void setPrice(double price)
         {
             this.price = price;
         }
+
         public double getPrice()
         {
             return price;
         }
+
         public void setStoragePeriod(int storagePeriod)
         {
             this.storagePeriod = storagePeriod;
         }
+
         public void setAmount(int amount)
         {
             this.amount = amount;
         }
+
         public int getAmount()
         {
             return amount;
@@ -124,7 +133,7 @@ namespace Lab2
 
         public override int GetHashCode()
         {
-            return id.GetHashCode() ^ name.GetHashCode()  ^ price.GetHashCode() ^ storagePeriod.GetHashCode();
+            return id.GetHashCode() ^ name.GetHashCode() ^ price.GetHashCode() ^ storagePeriod.GetHashCode();
         }
 
         public override string ToString()
