@@ -1,6 +1,6 @@
 ﻿#include "FST.h"
 #include <iostream>
-#include < string.h  >   //Äëÿ memset
+#include < string.h  > 
 
 namespace FST
 {
@@ -24,40 +24,6 @@ namespace FST
 		for (short i = 0; i < n; i++) relations[i] = p[i];
 	};
 
-	bool step(FST& fst, short*& rstates) // îäèí øàã àâòîìàòà
-	{
-		bool rc = false;
-		std::swap(rstates, fst.rstates);	// ñìåíà ìàññèâîâ
-		for (short i = 0; i < fst.nstates; i++)
-		{
-			if (rstates[i] == fst.position)
-				for (short j = 0; j < fst.nodes[i].n_relation; j++)
-				{
-					if (fst.nodes[i].relations[j].symbol == fst.string[fst.position])
-					{
-						fst.rstates[fst.nodes[i].relations[j].nnode] = fst.position + 1;
-						rc = true;
-					};
-				};
-		};
-		return rc;
-	};
-
-	bool execute(FST& fst)	// âûïîëíèòü ðàñïîçíîâàíèå öåïî÷êè
-	{
-		short* rstates = new short[fst.nstates];
-		memset(rstates, 0xff, sizeof(short) * fst.nstates);
-		short lstring = strlen(fst.string);
-		bool rc = true;
-		for (short i = 0; i < lstring && rc; i++)
-		{
-			fst.position++;					// ïðîäâèíóëè ïîçèöèþ
-			rc = step(fst, rstates);	// îäèí øàã àâòîìàòà
-		};
-		delete[] rstates;
-		return (rc ? (fst.rstates[fst.nstates - 1] == lstring) : rc);
-	};
-
 	FST::FST(char* s, short ns, NODE n, ...)
 	{
 		string = s;
@@ -68,6 +34,51 @@ namespace FST
 		rstates = new short[nstates];
 		memset(rstates, 0xff, sizeof(short) * nstates);
 		rstates[0] = 0;
-		position = -1; // ÷òîáû ñ 0 íà÷èíàòü â execute
+		position = -1;
 	};
+
+	bool step(FST& fst, short*& rstates)
+	{
+		bool rc = false;  // Изначально считаем, что переход не был выполнен
+
+		std::swap(rstates, fst.rstates); // Меняем местами указатели на состояния автомата
+
+		// Проходим по всем состояниям автомата
+		for (short i = 0; i < fst.nstates; i++)
+		{
+			if (rstates[i] == fst.position) // Проверяем, совпадает ли текущее состояние с позицией в строке
+			{
+				for (short j = 0; j < fst.nodes[i].n_relation; j++) // Если совпадает, проходим по всем отношениям текущего состояния
+				{
+					if (fst.nodes[i].relations[j].symbol == fst.string[fst.position]) // Проверяем, совпадает ли символ в строке с символом в отношении
+					{
+						fst.rstates[fst.nodes[i].relations[j].nnode] = fst.position + 1; // Если совпадает, обновляем состояние автомата
+						rc = true; // Помечаем, что переход выполнен
+					}
+				}
+			}
+		}
+
+		return rc; // Возвращаем true, если хотя бы один переход был выполнен, иначе false
+	}
+
+
+	bool execute(FST& fst)
+	{
+		short* rstates = new short[fst.nstates]; // Создаем массив состояний
+		memset(rstates, 0xff, sizeof(short) * fst.nstates);
+
+		short lstring = strlen(fst.string); // Получаем длину входной строки
+		bool rc = true; // Изначально считаем, что автомат примет строку
+
+		for (short i = 0; i < lstring && rc; i++) // Проходим по всей входной строке и выполняем шаги автомата
+		{
+			fst.position++; // Увеличиваем текущую позицию в строке
+			rc = step(fst, rstates); // Выполняем один шаг автомата и обновляем rc
+		}
+
+		delete[] rstates; // Освобождаем массив состояний
+		return (rc ? (fst.rstates[fst.nstates - 1] == lstring) : rc); // Возвращаем true, если автомат достиг конечного состояния, иначе false
+	}
+
 }

@@ -132,7 +132,6 @@
   <ItemGroup>
     <ClCompile Include="FST.cpp" />
     <ClCompile Include="SE_Lab16.cpp" />
-    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -24,15 +24,15 @@ int _tmain(int argc, _TCHAR* argv[])
 	FST::FST fst1(
 		(char*)"abcbkbj",
 		8,
-		FST::NODE(1, FST::RELATION('a', 1)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION(' ', 2)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION('c', 3)),
-		FST::NODE(2, FST::RELATION('b', 4), FST::RELATION(' ', 4)),
-		FST::NODE(3, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5)),
-		FST::NODE(4, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6), FST::RELATION(' ', 6)),
+		FST::NODE(2, FST::RELATION('a', 1), FST::RELATION('a', 2)),
+		FST::NODE(1, FST::RELATION('b', 2)),
+		FST::NODE(3, FST::RELATION('b', 2), FST::RELATION('c', 3), FST::RELATION('c', 4)),
+		FST::NODE(1, FST::RELATION('b', 4)),
+		FST::NODE(5, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('l', 6), FST::RELATION('k', 6)),
+		FST::NODE(3, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6)),
 		FST::NODE(2, FST::RELATION('b', 6), FST::RELATION('j', 7)),
 		FST::NODE()
-			);
+	);
 	if (FST::execute(fst1))
 		cout << "Цепочка " << fst1.string << " распознана" << endl;
 	else
@@ -41,12 +41,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	FST::FST fst2(
 		(char*)"abcbblbj",
 		8,
-		FST::NODE(1, FST::RELATION('a', 1)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION(' ', 2)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION('c', 3)),
-		FST::NODE(2, FST::RELATION('b', 4), FST::RELATION(' ', 4)),
-		FST::NODE(3, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5)),
-		FST::NODE(4, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6), FST::RELATION(' ', 6)),
+		FST::NODE(2, FST::RELATION('a', 1), FST::RELATION('a', 2)),
+		FST::NODE(1, FST::RELATION('b', 2)),
+		FST::NODE(3, FST::RELATION('b', 2), FST::RELATION('c', 3), FST::RELATION('c', 4)),
+		FST::NODE(1, FST::RELATION('b', 4)),
+		FST::NODE(5, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('l', 6), FST::RELATION('k', 6)),
+		FST::NODE(3, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6)),
 		FST::NODE(2, FST::RELATION('b', 6), FST::RELATION('j', 7)),
 		FST::NODE()
 	);
@@ -56,14 +56,14 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << "Цепочка " << fst2.string << " не распознана" << endl;
 
 	FST::FST fst3(
-		(char*)"a cbbbkkllbbbbj",
+		(char*)"acbbbkkllbbbbj",
 		8,
-		FST::NODE(1, FST::RELATION('a', 1)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION(' ', 2)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION('c', 3)),
-		FST::NODE(2, FST::RELATION('b', 4), FST::RELATION(' ', 4)),
-		FST::NODE(3, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5)),
-		FST::NODE(4, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6), FST::RELATION(' ', 6)),
+		FST::NODE(2, FST::RELATION('a', 1), FST::RELATION('a', 2)),
+		FST::NODE(1, FST::RELATION('b', 2)),
+		FST::NODE(3, FST::RELATION('b', 2), FST::RELATION('c', 3), FST::RELATION('c', 4)),
+		FST::NODE(1, FST::RELATION('b', 4)),
+		FST::NODE(5, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('l', 6), FST::RELATION('k', 6)),
+		FST::NODE(3, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6)),
 		FST::NODE(2, FST::RELATION('b', 6), FST::RELATION('j', 7)),
 		FST::NODE()
 	);
@@ -73,14 +73,14 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << "Цепочка " << fst3.string << " не распознана" << endl;
 
 	FST::FST fst4(
-		(char*)"a cbbl j",
+		(char*)"acbblj",
 		8,
-		FST::NODE(1, FST::RELATION('a', 1)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION(' ', 2)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION('c', 3)),
-		FST::NODE(2, FST::RELATION('b', 4), FST::RELATION(' ', 4)),
-		FST::NODE(3, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5)),
-		FST::NODE(4, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6), FST::RELATION(' ', 6)),
+		FST::NODE(2, FST::RELATION('a', 1), FST::RELATION('a', 2)),
+		FST::NODE(1, FST::RELATION('b', 2)),
+		FST::NODE(3, FST::RELATION('b', 2), FST::RELATION('c', 3), FST::RELATION('c', 4)),
+		FST::NODE(1, FST::RELATION('b', 4)),
+		FST::NODE(5, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('l', 6), FST::RELATION('k', 6)),
+		FST::NODE(3, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6)),
 		FST::NODE(2, FST::RELATION('b', 6), FST::RELATION('j', 7)),
 		FST::NODE()
 	);
@@ -90,14 +90,14 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << "Цепочка " << fst4.string << " не распознана" << endl;
 
 	FST::FST fst5(
-		(char*)"a c l j",
+		(char*)"aclj",
 		8,
-		FST::NODE(1, FST::RELATION('a', 1)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION(' ', 2)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION('c', 3)),
-		FST::NODE(2, FST::RELATION('b', 4), FST::RELATION(' ', 4)),
-		FST::NODE(3, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5)),
-		FST::NODE(4, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6), FST::RELATION(' ', 6)),
+		FST::NODE(2, FST::RELATION('a', 1), FST::RELATION('a', 2)),
+		FST::NODE(1, FST::RELATION('b', 2)),
+		FST::NODE(3, FST::RELATION('b', 2), FST::RELATION('c', 3), FST::RELATION('c', 4)),
+		FST::NODE(1, FST::RELATION('b', 4)),
+		FST::NODE(5, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('l', 6), FST::RELATION('k', 6)),
+		FST::NODE(3, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6)),
 		FST::NODE(2, FST::RELATION('b', 6), FST::RELATION('j', 7)),
 		FST::NODE()
 	);
@@ -107,14 +107,14 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << "Цепочка " << fst5.string << " не распознана" << endl;
 
 	FST::FST fst6(
-		(char*)"a c lbbbj",
+		(char*)"aclbbbj",
 		8,
-		FST::NODE(1, FST::RELATION('a', 1)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION(' ', 2)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION('c', 3)),
-		FST::NODE(2, FST::RELATION('b', 4), FST::RELATION(' ', 4)),
-		FST::NODE(3, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5)),
-		FST::NODE(4, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6), FST::RELATION(' ', 6)),
+		FST::NODE(2, FST::RELATION('a', 1), FST::RELATION('a', 2)),
+		FST::NODE(1, FST::RELATION('b', 2)),
+		FST::NODE(3, FST::RELATION('b', 2), FST::RELATION('c', 3), FST::RELATION('c', 4)),
+		FST::NODE(1, FST::RELATION('b', 4)),
+		FST::NODE(5, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('l', 6), FST::RELATION('k', 6)),
+		FST::NODE(3, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6)),
 		FST::NODE(2, FST::RELATION('b', 6), FST::RELATION('j', 7)),
 		FST::NODE()
 	);
@@ -124,14 +124,14 @@ int _tmain(int argc, _TCHAR* argv[])
 		cout << "Цепочка " << fst6.string << " не распознана" << endl;
 
 	FST::FST fst7(
-		(char*)"a c kbj",
+		(char*)"ackbj",
 		8,
-		FST::NODE(1, FST::RELATION('a', 1)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION(' ', 2)),
-		FST::NODE(2, FST::RELATION('b', 2), FST::RELATION('c', 3)),
-		FST::NODE(2, FST::RELATION('b', 4), FST::RELATION(' ', 4)),
-		FST::NODE(3, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5)),
-		FST::NODE(4, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6), FST::RELATION(' ', 6)),
+		FST::NODE(2, FST::RELATION('a', 1), FST::RELATION('a', 2)),
+		FST::NODE(1, FST::RELATION('b', 2)),
+		FST::NODE(3, FST::RELATION('b', 2), FST::RELATION('c', 3), FST::RELATION('c', 4)),
+		FST::NODE(1, FST::RELATION('b', 4)),
+		FST::NODE(5, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('l', 6), FST::RELATION('k', 6)),
+		FST::NODE(3, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6)),
 		FST::NODE(2, FST::RELATION('b', 6), FST::RELATION('j', 7)),
 		FST::NODE()
 	);
@@ -140,5 +140,37 @@ int _tmain(int argc, _TCHAR* argv[])
 	else
 		cout << "Цепочка " << fst7.string << " не распознана" << endl;
 
+	FST::FST fst8(
+		(char*)"abcbkb",
+		8,
+		FST::NODE(2, FST::RELATION('a', 1), FST::RELATION('a', 2)),
+		FST::NODE(1, FST::RELATION('b', 2)),
+		FST::NODE(3, FST::RELATION('b', 2), FST::RELATION('c', 3), FST::RELATION('c', 4)),
+		FST::NODE(1, FST::RELATION('b', 4)),
+		FST::NODE(5, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('l', 6), FST::RELATION('k', 6)),
+		FST::NODE(3, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6)),
+		FST::NODE(2, FST::RELATION('b', 6), FST::RELATION('j', 7)),
+		FST::NODE()
+	);
+	if (FST::execute(fst8))
+		cout << "Цепочка " << fst8.string << " распознана" << endl;
+	else
+		cout << "Цепочка " << fst8.string << " не распознана" << endl;
 
+	FST::FST fst9(
+		(char*)"abocbkbj",
+		8,
+		FST::NODE(2, FST::RELATION('a', 1), FST::RELATION('a', 2)),
+		FST::NODE(1, FST::RELATION('b', 2)),
+		FST::NODE(3, FST::RELATION('b', 2), FST::RELATION('c', 3), FST::RELATION('c', 4)),
+		FST::NODE(1, FST::RELATION('b', 4)),
+		FST::NODE(5, FST::RELATION('b', 4), FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('l', 6), FST::RELATION('k', 6)),
+		FST::NODE(3, FST::RELATION('k', 5), FST::RELATION('l', 5), FST::RELATION('b', 6)),
+		FST::NODE(2, FST::RELATION('b', 6), FST::RELATION('j', 7)),
+		FST::NODE()
+	);
+	if (FST::execute(fst9))
+		cout << "Цепочка " << fst9.string << " распознана" << endl;
+	else
+		cout << "Цепочка " << fst9.string << " не распознана" << endl;
 }
