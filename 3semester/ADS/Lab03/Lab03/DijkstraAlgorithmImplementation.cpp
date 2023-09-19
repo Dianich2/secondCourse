@@ -1,6 +1,6 @@
 #include <iostream>
 #include <climits>
-#include <queue> // ¬ключаем заголовок дл€ работы с очередью
+#include <queue>
 using namespace std;
 
 const int NUM_VERTICES = 9;
@@ -21,7 +21,7 @@ int main() {
         {0, 0, 0, 21, 0, 0, 15, 15, 0} // I
     };
 
-    char symbol[40];
+    char symbol[3];
     bool isValidInput = false;
     cout << "Input start vertex: ";
     while (!isValidInput) {
