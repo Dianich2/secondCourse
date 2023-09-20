@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab4
+namespace Lab4_5
 {
-    internal interface IEatable
+    internal interface ISpoiltable
     {
-        void eat();
+        public void spoilt();
     }
 }

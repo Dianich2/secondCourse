@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab4
+namespace Lab4_5
 {
-    internal interface ISpoiltable
+    public enum CakeTypes
     {
-        public void spoilt();
+     Cheesecake,
+     Chocolate, 
+     Cupcake
     }
 }
