@@ -8,8 +8,8 @@ namespace Lab4_5
 {
     internal abstract class Item
     {
-        public double Price { get; set; }
-        public double Weight { get; set; }
+        public double Price { get; }
+        public double Weight { get; }
 
         public virtual void spoilt()
         {
