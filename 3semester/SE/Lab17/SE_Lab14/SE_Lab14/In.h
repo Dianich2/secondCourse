@@ -1,6 +1,6 @@
 #pragma once
 #define IN_MAX_LEN_TEXT 1024*1024 //максимальный размер исходного кода
-#define IN_CODE_ENDL "\n"  //символ конца строки
+#define IN_CODE_ENDL '\n'  //символ конца строки
 #define MAX_LINE_LEN 1000
 
 // таблица проверки входной информации, индекс = код (Windows-1251) символа

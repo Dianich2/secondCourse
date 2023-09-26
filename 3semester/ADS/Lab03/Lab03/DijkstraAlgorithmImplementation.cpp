@@ -91,7 +91,6 @@ void findShortestPaths(int graph[NUM_VERTICES][NUM_VERTICES], int startVertex) {
         else {
             cout << "Unreachable";
         }
-
         cout << endl;
     }
 }

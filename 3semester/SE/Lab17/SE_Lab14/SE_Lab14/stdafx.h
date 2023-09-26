@@ -12,3 +12,7 @@
 #include "Log.h"
 #include "Parm.h"
 #include "Out.h"
+#include "FST.h"
+#include "IT.h"
+#include "LT.h"
+#include "Lexical_analyser.h"

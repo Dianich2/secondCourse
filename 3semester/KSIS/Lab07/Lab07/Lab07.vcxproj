@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9be8b58f-c826-4885-804b-c8b8bb74afbb}</ProjectGuid>
-    <RootNamespace>SELab14</RootNamespace>
+    <ProjectGuid>{6ae4a39f-ccc5-4caf-90a9-056b4cfe5ec5}</ProjectGuid>
+    <RootNamespace>Lab07</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>SE_Lab17</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -77,8 +76,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalOptions>/win1251 %(AdditionalOptions)</AdditionalOptions>
-      <LanguageStandard_C>Default</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,37 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Error.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/win-1251 %(AdditionalOptions)</AdditionalOptions>
-    </ClCompile>
-    <ClCompile Include="FST.cpp" />
-    <ClCompile Include="In.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/win-1251 %(AdditionalOptions)</AdditionalOptions>
-    </ClCompile>
-    <ClCompile Include="IT.cpp" />
-    <ClCompile Include="Lexical_analyser.cpp" />
-    <ClCompile Include="Log.cpp" />
-    <ClCompile Include="LT.cpp" />
-    <ClCompile Include="Out.cpp" />
-    <ClCompile Include="Parm.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/win-1251 %(AdditionalOptions)</AdditionalOptions>
-    </ClCompile>
-    <ClCompile Include="SE_lab17.cpp">
-      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/win-1251 %(AdditionalOptions)</AdditionalOptions>
-    </ClCompile>
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Error.h" />
-    <ClInclude Include="FST.h" />
-    <ClInclude Include="In.h" />
-    <ClInclude Include="IT.h" />
-    <ClInclude Include="Lexical_analyser.h" />
-    <ClInclude Include="Log.h" />
-    <ClInclude Include="LT.h" />
-    <ClInclude Include="Out.h" />
-    <ClInclude Include="Parm.h" />
-    <ClInclude Include="stdafx.h" />
+    <ClCompile Include="echo_request.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

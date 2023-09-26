@@ -52,9 +52,27 @@ namespace In
 		{
 			if (objcod[i] == '\'' && !is_allowed_to_skip)
 				is_allowed_to_skip = true;
-			if (objcod[i] == '\'' && is_allowed_to_skip)
+			else if (objcod[i] == '\'' && is_allowed_to_skip)
 				is_allowed_to_skip = false;
-			if ((objcod[i] == ' ' && objcod[i + 1] == ' ' && is_allowed_to_skip) || (objcod[i] == '|' && objcod[i + 1] == '|'))
+			if ((objcod[i] == ' ' && objcod[i + 1] == ' ' && is_allowed_to_skip) || (objcod[i] == '|' && objcod[i + 1] == '|') || (objcod[i] == ' ' && objcod[i - 1] == ' ' && is_allowed_to_skip)
+				|| (objcod[i] == ' ' && objcod[i + 1] == '=')
+				|| (objcod[i] == ' ' && objcod[i + 1] == '+')
+				|| (objcod[i] == ' ' && objcod[i + 1] == '-')
+				|| (objcod[i] == ' ' && objcod[i + 1] == '*')
+				|| (objcod[i] == ' ' && objcod[i + 1] == ',')
+				|| (objcod[i] == ' ' && objcod[i + 1] == '(')
+				|| (objcod[i] == ' ' && objcod[i + 1] == ')')
+				|| (objcod[i] == ' ' && objcod[i + 1] == ';')
+
+				|| (objcod[i] == ' ' && objcod[i - 1] == '=')
+				|| (objcod[i] == ' ' && objcod[i - 1] == '+')
+				|| (objcod[i] == ' ' && objcod[i - 1] == '-')
+				|| (objcod[i] == ' ' && objcod[i - 1] == '*')
+				|| (objcod[i] == ' ' && objcod[i - 1] == ',')
+				|| (objcod[i] == ' ' && objcod[i - 1] == '(')
+				|| (objcod[i] == ' ' && objcod[i - 1] == ')')
+				|| (objcod[i] == ' ' && objcod[i - 1] == ';')
+				)
 				continue;
 			else
 				newobjcod[iter++] = objcod[i];
@@ -63,6 +81,7 @@ namespace In
 		in.ignore = ignors;
 		in.lines = lines;
 		in.text = newobjcod;
+		//in.text = objcod;
 		return in;
 	}
 

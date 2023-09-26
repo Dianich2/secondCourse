@@ -6,6 +6,7 @@
 #include "In.h"
 #include "Log.h"   //вывод в файл до ошибки
 #include "Out.h"
+#include "Lexical_analyser.h"
 
 using namespace std;
 
@@ -21,6 +22,10 @@ int _tmain(int argc, wchar_t* argv[]) {
 		cout << "Всего символов: " << in.size << endl;
 		cout << "Всего строк: " << in.lines << endl;
 		cout << "Пропущено: " << in.ignore << endl;
+		std::ofstream Out(parm.out);
+		Out << in.text;
+		Out.close();
+		//Lex_analyser::Lexical_analysis(parm, in);
 	}
 	catch (Error::ERROR e)
 	{
@@ -29,27 +34,27 @@ int _tmain(int argc, wchar_t* argv[]) {
 			return 1;
 	}
 	 
-	Log::LOG log = Log::INITLOG;
-	Out::OUT out = Out::INITOUT;
-	try
-	{
-		Parm::PARM parm = Parm::getparm(argc, argv);
-		log = Log::getlog(parm.log);
-		out = Out::getout(parm.out);
-		/*Log::WriteLine(log, (char*)"Тест", (char*)" без ошибок \n", "");
-		Log::WriteLine(log, (wchar_t*)L"Тест", (wchar_t*)L" без ошибок \n", L"");*/
-		Log::WriteLog(log);
-		Log::WriteParm(log, parm);
-		In::IN in = In::getin(parm.in);
-		Log::WriteIn(log, in);
-		Log::Close(log);
+	//Log::LOG log = Log::INITLOG;
+	//Out::OUT out = Out::INITOUT;
+	//try
+	//{
+	//	Parm::PARM parm = Parm::getparm(argc, argv);
+	//	log = Log::getlog(parm.log);
+	//	out = Out::getout(parm.out);
+	//	/*Log::WriteLine(log, (char*)"Тест", (char*)" без ошибок \n", "");
+	//	Log::WriteLine(log, (wchar_t*)L"Тест", (wchar_t*)L" без ошибок \n", L"");*/
+	//	Log::WriteLog(log);
+	//	Log::WriteParm(log, parm);
+	//	In::IN in = In::getin(parm.in);
+	//	Log::WriteIn(log, in);
+	//	Log::Close(log);
 
-		Out::WriteToFile(out, in);
-		Out::Close(out);
-	}
-	catch (Error::ERROR e) {
-		Log::WriteError(log, e);
-		Out::WriteError(out, e);
-	}
+	//	Out::WriteToFile(out, in);
+	//	Out::Close(out);
+	//}
+	//catch (Error::ERROR e) {
+	//	Log::WriteError(log, e);
+	//	Out::WriteError(out, e);
+	//}
 
 }
