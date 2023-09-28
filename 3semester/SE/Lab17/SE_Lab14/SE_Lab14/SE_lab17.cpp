@@ -25,7 +25,7 @@ int _tmain(int argc, wchar_t* argv[]) {
 		std::ofstream Out(parm.out);
 		Out << in.text;
 		Out.close();
-		//Lex_analyser::Lexical_analysis(parm, in);
+		Lex_analyser::Lexical_analysis(parm, in);
 	}
 	catch (Error::ERROR e)
 	{

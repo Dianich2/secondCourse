@@ -1,44 +1,239 @@
-#pragma once
+п»ї#pragma once
 #include <cstddef>
 
 namespace FST
 {
-	struct RELATION			// ребро:символ -> вершина графа переходов КА
+	struct RELATION			// СЂРµР±СЂРѕ:СЃРёРјРІРѕР» -> РІРµСЂС€РёРЅР° РіСЂР°С„Р° РїРµСЂРµС…РѕРґРѕРІ РљРђ
 	{
-		char symbol;		// символ перехода
-		short nnode;		// номер смежной вершины
+		char symbol;		// СЃРёРјРІРѕР» РїРµСЂРµС…РѕРґР°
+		short nnode;		// РЅРѕРјРµСЂ СЃРјРµР¶РЅРѕР№ РІРµСЂС€РёРЅС‹
 		RELATION(
-			char  c = 0x00,		// символ перехода
-			short ns = NULL		// новое состояние
+			char  c = 0x00,		// СЃРёРјРІРѕР» РїРµСЂРµС…РѕРґР°
+			short ns = NULL		// РЅРѕРІРѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ
 		);
 	};
 
-	struct NODE			// вершина графа переходов
+	struct NODE			// РІРµСЂС€РёРЅР° РіСЂР°С„Р° РїРµСЂРµС…РѕРґРѕРІ
 	{
-		short n_relation;		// количество инцидентных ребер
-		RELATION* relations;	// инцидентные ребра
+		short n_relation;		// РєРѕР»РёС‡РµСЃС‚РІРѕ РёРЅС†РёРґРµРЅС‚РЅС‹С… СЂРµР±РµСЂ
+		RELATION* relations;	// РёРЅС†РёРґРµРЅС‚РЅС‹Рµ СЂРµР±СЂР°
 		NODE();
 		NODE(
-			short n,				// количество инцидентных ребер
-			RELATION rel, ...		// список ребер
+			short n,				// РєРѕР»РёС‡РµСЃС‚РІРѕ РёРЅС†РёРґРµРЅС‚РЅС‹С… СЂРµР±РµСЂ
+			RELATION rel, ...		// СЃРїРёСЃРѕРє СЂРµР±РµСЂ
 		);
 	};
 
-	struct FST		// недетерминированный конечный автомат
+	struct FST		// РЅРµРґРµС‚РµСЂРјРёРЅРёСЂРѕРІР°РЅРЅС‹Р№ РєРѕРЅРµС‡РЅС‹Р№ Р°РІС‚РѕРјР°С‚
 	{
-		char* string;	// цепочка (строка, завершатся 0x00 )
-		short position; // текущая позиция в цепочке
-		short nstates;	// количество состояний конечного автомата
-		NODE* nodes;	// граф переходов: [0] - начальное состояние, [nstate-1] - конечное
-		short* rstates;	// возможные состояние автомата на данной позиции
+		char* string;	// С†РµРїРѕС‡РєР° (СЃС‚СЂРѕРєР°, Р·Р°РІРµСЂС€Р°С‚СЃСЏ 0x00 )
+		short position; // С‚РµРєСѓС‰Р°СЏ РїРѕР·РёС†РёСЏ РІ С†РµРїРѕС‡РєРµ
+		short nstates;	// РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕСЃС‚РѕСЏРЅРёР№ РєРѕРЅРµС‡РЅРѕРіРѕ Р°РІС‚РѕРјР°С‚Р°
+		NODE* nodes;	// РіСЂР°С„ РїРµСЂРµС…РѕРґРѕРІ: [0] - РЅР°С‡Р°Р»СЊРЅРѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ, [nstate-1] - РєРѕРЅРµС‡РЅРѕРµ
+		short* rstates;	// РІРѕР·РјРѕР¶РЅС‹Рµ СЃРѕСЃС‚РѕСЏРЅРёРµ Р°РІС‚РѕРјР°С‚Р° РЅР° РґР°РЅРЅРѕР№ РїРѕР·РёС†РёРё
 		FST(
-			char* s,	// цепочка (строка, завершается 0x00 )
-			short ns,	// количество состояний автомата
-			NODE n, ...	// список состояний (граф переходов)
+			char* s,	// С†РµРїРѕС‡РєР° (СЃС‚СЂРѕРєР°, Р·Р°РІРµСЂС€Р°РµС‚СЃСЏ 0x00 )
+			short ns,	// РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕСЃС‚РѕСЏРЅРёР№ Р°РІС‚РѕРјР°С‚Р°
+			NODE n, ...	// СЃРїРёСЃРѕРє СЃРѕСЃС‚РѕСЏРЅРёР№ (РіСЂР°С„ РїРµСЂРµС…РѕРґРѕРІ)
 		);
 	};
 
-	bool execute(			// выполнить распознование цепочки
-		FST& fst	// недетерминированный конечный автомат
+	bool execute(			// РІС‹РїРѕР»РЅРёС‚СЊ СЂР°СЃРїРѕР·РЅРѕРІР°РЅРёРµ С†РµРїРѕС‡РєРё
+		FST& fst	// РЅРµРґРµС‚РµСЂРјРёРЅРёСЂРѕРІР°РЅРЅС‹Р№ РєРѕРЅРµС‡РЅС‹Р№ Р°РІС‚РѕРјР°С‚
 	);
+
+#pragma region auto
+
+#define FST_DECLARE 8,	\
+	FST::NODE(1, FST::RELATION('d', 1)),\
+	FST::NODE(1, FST::RELATION('e', 2)),\
+	FST::NODE(1, FST::RELATION('c', 3)),\
+	FST::NODE(1, FST::RELATION('l', 4)),\
+	FST::NODE(1, FST::RELATION('a', 5)),\
+	FST::NODE(1, FST::RELATION('r', 6)),\
+	FST::NODE(1, FST::RELATION('e', 7)),\
+	FST::NODE()
+
+#define FST_INTEGER 8,	\
+	FST::NODE(1, FST::RELATION('i', 1)),\
+	FST::NODE(1, FST::RELATION('n', 2)),\
+	FST::NODE(1, FST::RELATION('t', 3)),\
+	FST::NODE(1, FST::RELATION('e', 4)),\
+	FST::NODE(1, FST::RELATION('g', 5)),\
+	FST::NODE(1, FST::RELATION('e', 6)),\
+	FST::NODE(1, FST::RELATION('r', 7)),\
+	FST::NODE()
+
+#define FST_STRING 7,	\
+	FST::NODE(1, FST::RELATION('s', 1)),\
+	FST::NODE(1, FST::RELATION('t', 2)),\
+	FST::NODE(1, FST::RELATION('r', 3)),\
+	FST::NODE(1, FST::RELATION('i', 4)),\
+	FST::NODE(1, FST::RELATION('n', 5)),\
+	FST::NODE(1, FST::RELATION('g', 6)),\
+	FST::NODE()
+
+#define FST_FUNCTION 9,	\
+	FST::NODE(1, FST::RELATION('f', 1)),\
+	FST::NODE(1, FST::RELATION('u', 2)),\
+	FST::NODE(1, FST::RELATION('n', 3)),\
+	FST::NODE(1, FST::RELATION('c', 4)),\
+	FST::NODE(1, FST::RELATION('t', 5)),\
+	FST::NODE(1, FST::RELATION('i', 6)),\
+	FST::NODE(1, FST::RELATION('o', 7)),\
+	FST::NODE(1, FST::RELATION('n', 8)),\
+	FST::NODE()
+
+#define FST_RETURN 7,	\
+	FST::NODE(1, FST::RELATION('r', 1)),\
+	FST::NODE(1, FST::RELATION('e', 2)),\
+	FST::NODE(1, FST::RELATION('t', 3)),\
+	FST::NODE(1, FST::RELATION('u', 4)),\
+	FST::NODE(1, FST::RELATION('r', 5)),\
+	FST::NODE(1, FST::RELATION('n', 6)),\
+	FST::NODE()
+
+#define FST_PRINT 6,	\
+	FST::NODE(1, FST::RELATION('p', 1)),\
+	FST::NODE(1, FST::RELATION('r', 2)),\
+	FST::NODE(1, FST::RELATION('i', 3)),\
+	FST::NODE(1, FST::RELATION('n', 4)),\
+	FST::NODE(1, FST::RELATION('t', 5)),\
+	FST::NODE()
+
+#define FST_MAIN 5,	\
+	FST::NODE(1, FST::RELATION('m', 1)),\
+	FST::NODE(1, FST::RELATION('a', 2)),\
+	FST::NODE(1, FST::RELATION('i', 3)),\
+	FST::NODE(1, FST::RELATION('n', 4)),\
+	FST::NODE()
+
+#define FST_ID 3,	\
+	FST::NODE(52,	\
+	FST::RELATION('a', 1), FST::RELATION('b', 1), FST::RELATION('c', 1), FST::RELATION('d', 1), FST::RELATION('e', 1), FST::RELATION('f', 1),\
+	FST::RELATION('g', 1), FST::RELATION('h', 1), FST::RELATION('i', 1), FST::RELATION('j', 1), FST::RELATION('k', 1), FST::RELATION('l', 1),\
+	FST::RELATION('m', 1), FST::RELATION('n', 1), FST::RELATION('o', 1), FST::RELATION('p', 1), FST::RELATION('q', 1), FST::RELATION('r', 1),\
+	FST::RELATION('s', 1), FST::RELATION('t', 1), FST::RELATION('u', 1), FST::RELATION('v', 1), FST::RELATION('w', 1), FST::RELATION('x', 1),\
+	FST::RELATION('y', 1), FST::RELATION('z', 1),\
+	\
+	FST::RELATION('a', 2), FST::RELATION('b', 2), FST::RELATION('c', 2), FST::RELATION('d', 2), FST::RELATION('e', 2), FST::RELATION('f', 2),\
+	FST::RELATION('g', 2), FST::RELATION('h', 2), FST::RELATION('i', 2), FST::RELATION('j', 2), FST::RELATION('k', 2), FST::RELATION('l', 2),\
+	FST::RELATION('m', 2), FST::RELATION('n', 2), FST::RELATION('o', 2), FST::RELATION('p', 2), FST::RELATION('q', 2), FST::RELATION('r', 2),\
+	FST::RELATION('s', 2), FST::RELATION('t', 2), FST::RELATION('u', 2), FST::RELATION('v', 2), FST::RELATION('w', 2), FST::RELATION('x', 2),\
+	FST::RELATION('y', 2), FST::RELATION('z', 2)),\
+	\
+	FST::NODE(72,	\
+	FST::RELATION('a', 1), FST::RELATION('b', 1), FST::RELATION('c', 1), FST::RELATION('d', 1), FST::RELATION('e', 1), FST::RELATION('f', 1),\
+	FST::RELATION('g', 1), FST::RELATION('h', 1), FST::RELATION('i', 1), FST::RELATION('j', 1), FST::RELATION('k', 1), FST::RELATION('l', 1),\
+	FST::RELATION('m', 1), FST::RELATION('n', 1), FST::RELATION('o', 1), FST::RELATION('p', 1), FST::RELATION('q', 1), FST::RELATION('r', 1),\
+	FST::RELATION('s', 1), FST::RELATION('t', 1), FST::RELATION('u', 1), FST::RELATION('v', 1), FST::RELATION('w', 1), FST::RELATION('x', 1),\
+	FST::RELATION('y', 1), FST::RELATION('z', 1),\
+	FST::RELATION('1', 1), FST::RELATION('2', 1), FST::RELATION('3', 1), FST::RELATION('4', 1), FST::RELATION('5', 1), FST::RELATION('6', 1),\
+	FST::RELATION('7', 1), FST::RELATION('8', 1), FST::RELATION('9', 1), FST::RELATION('0', 1),\
+	\
+	FST::RELATION('a', 2), FST::RELATION('b', 2), FST::RELATION('c', 2), FST::RELATION('d', 2), FST::RELATION('e', 2), FST::RELATION('f', 2),\
+	FST::RELATION('g', 2), FST::RELATION('h', 2), FST::RELATION('i', 2), FST::RELATION('j', 2), FST::RELATION('k', 2), FST::RELATION('l', 2),\
+	FST::RELATION('m', 2), FST::RELATION('n', 2), FST::RELATION('o', 2), FST::RELATION('p', 2), FST::RELATION('q', 2), FST::RELATION('r', 2),\
+	FST::RELATION('s', 2), FST::RELATION('t', 2), FST::RELATION('u', 2), FST::RELATION('v', 2), FST::RELATION('w', 2), FST::RELATION('x', 2),\
+	FST::RELATION('y', 2), FST::RELATION('z', 2),\
+	FST::RELATION('1', 2), FST::RELATION('2', 2), FST::RELATION('3', 2), FST::RELATION('4', 2), FST::RELATION('5', 2), FST::RELATION('6', 2),\
+	FST::RELATION('7', 2), FST::RELATION('8', 2), FST::RELATION('9', 2), FST::RELATION('0', 2)),\
+	FST::NODE()
+
+#define FST_INTLIT 2,	\
+	FST::NODE(20,	\
+	FST::RELATION('1', 0), FST::RELATION('2', 0), FST::RELATION('3', 0), FST::RELATION('4', 0), FST::RELATION('5', 0), FST::RELATION('6', 0),\
+	FST::RELATION('7', 0), FST::RELATION('8', 0), FST::RELATION('9', 0), FST::RELATION('0', 0),\
+	\
+	FST::RELATION('1', 1), FST::RELATION('2', 1), FST::RELATION('3', 1), FST::RELATION('4', 1), FST::RELATION('5', 1), FST::RELATION('6', 1),\
+	FST::RELATION('7', 1), FST::RELATION('8', 1), FST::RELATION('9', 1), FST::RELATION('0', 1)),\
+	FST::NODE()
+
+#define FST_STRLIT 4,	\
+	FST::NODE(2, FST::RELATION('\'', 1), FST::RELATION('\'', 2)),\
+	FST::NODE(158,	\
+	FST::RELATION('a', 1), FST::RELATION('b', 1), FST::RELATION('c', 1), FST::RELATION('d', 1), FST::RELATION('e', 1), FST::RELATION('f', 1),\
+	FST::RELATION('g', 1), FST::RELATION('h', 1), FST::RELATION('i', 1), FST::RELATION('j', 1), FST::RELATION('k', 1), FST::RELATION('l', 1),\
+	FST::RELATION('m', 1), FST::RELATION('n', 1), FST::RELATION('o', 1), FST::RELATION('p', 1), FST::RELATION('q', 1), FST::RELATION('r', 1),\
+	FST::RELATION('s', 1), FST::RELATION('t', 1), FST::RELATION('u', 1), FST::RELATION('v', 1), FST::RELATION('w', 1), FST::RELATION('x', 1),\
+	FST::RELATION('y', 1), FST::RELATION('z', 1), FST::RELATION('1', 1), FST::RELATION('2', 1), FST::RELATION('3', 1), FST::RELATION('4', 1),\
+	FST::RELATION('5', 1), FST::RELATION('6', 1), FST::RELATION('7', 1), FST::RELATION('8', 1), FST::RELATION('9', 1), FST::RELATION('0', 1),\
+	\
+	FST::RELATION('Г ', 1), FST::RELATION('ГЎ', 1), FST::RELATION('Гў', 1), FST::RELATION('ГЈ', 1), FST::RELATION('Г¤', 1), FST::RELATION('ГҐ', 1),\
+	FST::RELATION('Вё', 1), FST::RELATION('Г¦', 1), FST::RELATION('Г§', 1), FST::RELATION('ГЁ', 1), FST::RELATION('Г©', 1), FST::RELATION('ГЄ', 1),\
+	FST::RELATION('Г«', 1), FST::RELATION('Г¬', 1), FST::RELATION('Г­', 1), FST::RELATION('Г®', 1), FST::RELATION('ГЇ', 1), FST::RELATION('Г°', 1),\
+	FST::RELATION('Г±', 1), FST::RELATION('ГІ', 1), FST::RELATION('Гі', 1), FST::RELATION('Гґ', 1), FST::RELATION('Гµ', 1), FST::RELATION('Г¶', 1),\
+	FST::RELATION('Г·', 1), FST::RELATION('Гё', 1), FST::RELATION('Г№', 1), FST::RELATION('Гє', 1), FST::RELATION('Г»', 1), FST::RELATION('Гј', 1),\
+	FST::RELATION('ГЅ', 1), FST::RELATION('Гѕ', 1), FST::RELATION('Гї', 1), FST::RELATION(' ', 1), FST::RELATION('.', 1), FST::RELATION(',', 1),\
+	FST::RELATION('?', 1), FST::RELATION('!', 1), FST::RELATION(';', 1), FST::RELATION(':', 1), FST::RELATION('-', 1), FST::RELATION(')', 1),\
+	FST::RELATION('(', 1), \
+	\
+	FST::RELATION('a', 2), FST::RELATION('b', 2), FST::RELATION('c', 2), FST::RELATION('d', 2), FST::RELATION('e', 2), FST::RELATION('f', 2),\
+	FST::RELATION('g', 2), FST::RELATION('h', 2), FST::RELATION('i', 2), FST::RELATION('j', 2), FST::RELATION('k', 2), FST::RELATION('l', 2),\
+	FST::RELATION('m', 2), FST::RELATION('n', 2), FST::RELATION('o', 2), FST::RELATION('p', 2), FST::RELATION('q', 2), FST::RELATION('r', 2),\
+	FST::RELATION('s', 2), FST::RELATION('t', 2), FST::RELATION('u', 2), FST::RELATION('v', 2), FST::RELATION('w', 2), FST::RELATION('x', 2),\
+	FST::RELATION('y', 2), FST::RELATION('z', 2), FST::RELATION('1', 2), FST::RELATION('2', 2), FST::RELATION('3', 2), FST::RELATION('4', 2),\
+	FST::RELATION('5', 2), FST::RELATION('6', 2), FST::RELATION('7', 2), FST::RELATION('8', 2), FST::RELATION('9', 2), FST::RELATION('0', 2),\
+	\
+	FST::RELATION('Г ', 2), FST::RELATION('ГЎ', 2), FST::RELATION('Гў', 2), FST::RELATION('ГЈ', 2), FST::RELATION('Г¤', 2), FST::RELATION('ГҐ', 2),\
+	FST::RELATION('Вё', 2), FST::RELATION('Г¦', 2), FST::RELATION('Г§', 2), FST::RELATION('ГЁ', 2), FST::RELATION('Г©', 2), FST::RELATION('ГЄ', 2),\
+	FST::RELATION('Г«', 2), FST::RELATION('Г¬', 2), FST::RELATION('Г­', 2), FST::RELATION('Г®', 2), FST::RELATION('ГЇ', 2), FST::RELATION('Г°', 2),\
+	FST::RELATION('Г±', 2), FST::RELATION('ГІ', 2), FST::RELATION('Гі', 2), FST::RELATION('Гґ', 2), FST::RELATION('Гµ', 2), FST::RELATION('Г¶', 2),\
+	FST::RELATION('Г·', 2), FST::RELATION('Гё', 2), FST::RELATION('Г№', 2), FST::RELATION('Гє', 2), FST::RELATION('Г»', 2), FST::RELATION('Гј', 2),\
+	FST::RELATION('ГЅ', 2), FST::RELATION('Гѕ', 2), FST::RELATION('Гї', 2), FST::RELATION(' ', 2), FST::RELATION('.', 2), FST::RELATION(',', 2),\
+	FST::RELATION('?', 2), FST::RELATION('!', 2), FST::RELATION(';', 2), FST::RELATION(':', 2), FST::RELATION('-', 2), FST::RELATION(')', 2),\
+	FST::RELATION('(', 2)),\
+	\
+	FST::NODE(1, FST::RELATION('\'', 3)),\
+	FST::NODE()
+
+#define FST_OPERATOR 2,	\
+	FST::NODE(4, FST::RELATION('+', 1), FST::RELATION('-', 1), FST::RELATION('*', 1), FST::RELATION('/', 1)),\
+	FST::NODE()
+
+#define FST_PLUS 2,	\
+	FST::NODE(1, FST::RELATION('+', 1)),\
+	FST::NODE()
+
+#define FST_MINUS 2,	\
+	FST::NODE(1, FST::RELATION('-', 1)),\
+	FST::NODE()
+
+#define FST_STAR 2,	\
+	FST::NODE(1, FST::RELATION('*', 1)),\
+	FST::NODE()
+
+#define FST_DIRSLASH 2,	\
+	FST::NODE(1, FST::RELATION('/', 1)),\
+	FST::NODE()
+
+#define FST_SEMICOLON 2,	\
+	FST::NODE(1, FST::RELATION(';', 1)),\
+	FST::NODE()
+
+#define FST_COMMA 2,	\
+	FST::NODE(1, FST::RELATION(',', 1)),\
+	FST::NODE()
+
+#define FST_LEFTBRACE 2,	\
+	FST::NODE(1, FST::RELATION('{', 1)),\
+	FST::NODE()
+
+#define FST_BRACELET 2,	\
+	FST::NODE(1, FST::RELATION('}', 1)),\
+	FST::NODE()
+
+#define FST_LEFTTHESIS 2,	\
+	FST::NODE(1, FST::RELATION('(', 1)),\
+	FST::NODE()
+
+#define FST_RIGHTTHESIS 2,	\
+	FST::NODE(1, FST::RELATION(')', 1)),\
+	FST::NODE()
+
+#define FST_EQUAL 2,	\
+	FST::NODE(1, FST::RELATION('=', 1)),\
+	FST::NODE()
+
+#pragma endregion
 };

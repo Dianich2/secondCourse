@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab4_5
+namespace Lab3
 {
-    internal class Product : Item, ISpoiltable
+    public class Product : Item
     {
         protected string name;
         protected double price;
         protected double weight;
 
-        public string Name { get { return name; }}
+        public string Name { get { return name; } }
         public double Price { get { return price; } }
         public double Weight { get { return weight; } }
 
@@ -28,20 +28,19 @@ namespace Lab4_5
             Console.WriteLine("spoilt method from Product class");
         }
 
-        void ISpoiltable.spoilt()
-        {
-            Console.WriteLine("spoilt method from ISpoiltable implementation");
-        }
+
 
         public override string ToString()
         {
-            return "Type:" + this.GetType() + ", Name: " + name + ", + price: " + price
-                + ", + weiht:" + weight;
+            return "Type:" + this.GetType() + ", Name: " + name + ", price: " + price
+                + ", weiht:" + weight;
         }
 
         public Product getCopy()
         {
             return new Product(Name, Price, Weight);
         }
+
+
     }
 }
