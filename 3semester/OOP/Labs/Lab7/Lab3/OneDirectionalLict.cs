@@ -15,7 +15,6 @@ namespace Lab3
 
         List<T> mylist;
         
-
         public OneDirectionalList()
         {
             product.name = "Some product";
@@ -26,11 +25,15 @@ namespace Lab3
 
         public void Add(T item)
         {
+            if(item == null) 
+                throw new ArgumentNullException();
             mylist.Add(item);
         }
 
         public void Remove(T item)
         {
+            if (item == null)
+                throw new ArgumentNullException();
             mylist.Remove(item);
         }
 
@@ -65,27 +68,6 @@ namespace Lab3
 
         }
 
-
-        public class Production
-        {
-            public int Id;
-            public string name;
-        }
-
-        public class Developer
-        {
-            public string fio;
-            public int id;
-            public string department;
-
-            public Developer(string fio, int id, string department)
-            {
-                this.fio = fio;
-                this.id = id;
-                this.department = department;
-            }
-        }
-
         public void SaveToFile(string filePath)
         {
             using (StreamWriter writer = new StreamWriter(filePath))
@@ -111,6 +93,26 @@ namespace Lab3
                         Console.WriteLine(line);
                     }
                 }
+            }
+        }
+
+        public class Production
+        {
+            public int Id;
+            public string name;
+        }
+
+        public class Developer
+        {
+            public string fio;
+            public int id;
+            public string department;
+
+            public Developer(string fio, int id, string department)
+            {
+                this.fio = fio;
+                this.id = id;
+                this.department = department;
             }
         }
     }

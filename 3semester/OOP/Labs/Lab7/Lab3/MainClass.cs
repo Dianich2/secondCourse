@@ -39,7 +39,7 @@ namespace Lab3
                 list3.Add(new Product("Product2", 64.1, 2));
                 list3.Add(new Product("Product3", 25, 1.6));
                 Console.WriteLine(list3.ToString());
-                Product pr = list3.FindElementByPredicate(x => x.Price == 23.5);
+                Product pr = list3.FindElementByPredicate(product => product.Price == 23.5);
                 if (pr != default(Product))
                 {
                     Console.WriteLine("Founded element: " + pr);
