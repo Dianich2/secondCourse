@@ -7,11 +7,11 @@ namespace LA
 		char* temp = new char[token_size] {};
 		int str_number = 1;
 		int str_position = 1;
-		In::IN in_ex;
+		In::IN in;
 
 		for (int i = 0, j = 0; i < source.size; i++)
 		{
-			if (in_ex.code[(source.text[i])] != in_ex.D  && (source.text[i]) != '|')
+			if (in.code[(source.text[i])] != in.D && in.code[(source.text[i])] != in.O && (source.text[i]) != '|')
 			{
 				temp[j++] = source.text[i];
 				str_position++;
@@ -29,7 +29,7 @@ namespace LA
 						continue;
 					}
 					else
-						throw ERROR_THROW_IN(123, str_number, str_position);
+						throw ERROR_THROW_IN(123, str_number, str_position - strlen(temp) + 1);
 				}
 				else
 				{
@@ -44,7 +44,7 @@ namespace LA
 								temp[j++] = source.text[i++];
 							}
 							else
-								throw ERROR_THROW_IN(127, str_number, str_position);
+								throw ERROR_THROW_IN(127, str_number, str_position - strlen(temp) + 1);
 						}
 
 						if (source.text[i] == '\'')
@@ -56,10 +56,10 @@ namespace LA
 								continue;
 							}
 							else
-								throw ERROR_THROW_IN(123, str_number, str_position);
+								throw ERROR_THROW_IN(123, str_number, str_position - strlen(temp) + 1);
 						}
 						else
-							throw ERROR_THROW_IN(124, str_number, str_position);
+							throw ERROR_THROW_IN(124, str_number, str_position - strlen(temp) + 1);
 					}
 
 					if (source.text[i] != '|')
@@ -75,7 +75,7 @@ namespace LA
 						if (Analyse(temp, str_number, lexTable, idTable))
 							str_position++;
 						else
-							throw ERROR_THROW_IN(123, str_number, str_position);
+							throw ERROR_THROW_IN(123, str_number, str_position - strlen(temp) + 1);
 
 						temp[0] = '/0'; j = 0;
 					}
@@ -296,7 +296,6 @@ namespace LA
 					Add(lexTable, { LEX_LITERAL, str_number, i });
 				else
 				{
-					//if prev prev entry had id and prev is '=' then cuurnet id equals to the prev prev, in other case generate new lex name
 					idTable.Add({ "\0", (idTable.GetEntry(lexTable.GetEntry(lexTable.size - 2).idxTI).id[0] != '\0' && lexTable.GetEntry(lexTable.size - 1).lexema == '=') ? idTable.GetEntry(lexTable.GetEntry(lexTable.size - 2).idxTI).id : idTable.GetLexemaName() , IT::IDDATATYPE::STR, IT::IDTYPE::L,lexTable.size });
 					idTable.table[idTable.size - 1].value.vstr.len = 0;
 					int i = 0, j = 0;
@@ -483,7 +482,6 @@ namespace LA
 					if (LeftBrace && lexTable.GetEntry(i).lexema == LEX_ID &&
 						idTable.GetEntry(lexTable.GetEntry(i).idxTI).idtype == IT::IDTYPE::F)
 					{
-						//if founded in cuurrent function
 						int temp = idTable.IsId(token, idTable.GetEntry(lexTable.GetEntry(i).idxTI).id);
 						if (temp != -1)
 						{
@@ -492,7 +490,6 @@ namespace LA
 						}
 						else
 						{
-							// looking externaly
 							temp = idTable.IsId(token);
 							if (idTable.GetEntry(temp).idtype != IT::IDTYPE::F)
 							{
