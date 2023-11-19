@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="asm1.asm">
+    <MASM Include="asm2.asm">
       <Filter>Исходные файлы</Filter>
     </MASM>
   </ItemGroup>

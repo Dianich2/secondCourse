@@ -211,7 +211,7 @@ namespace Lab12
             }
             catch
             {
-                Console.WriteLine("Error creatin archive:");
+                Console.WriteLine("Error creating archive:");
             }
             try
             {
@@ -234,15 +234,15 @@ namespace Lab12
             KVVFileInfo.GetFullPath("Lab12.exe");
             KVVFileInfo.GetFileInfo("Lab12.exe");
             KVVDirInfo.GetDirInfo("Test");
-            KVVFileManager.GetAllFilesAndDir("D:\\Study\\university\\3semester\\OOP\\Labs\\Lab12\\Lab12\\bin\\Debug");
+            KVVFileManager.GetAllFilesAndDir("D:\\Study\\university\\3semester\\OOP\\Labs\\Lab12\\Lab12\\bin\\Debug\\net6.0");
             KVVFileManager.CreateDir("KVVInspect");
             KVVFileManager.CreateDir("KVVFiles");
             KVVFileManager.CreateFile("test.txt");
-            KVVFileManager.CopyFile("D:\\Study\\university\\3semester\\OOP\\Labs\\Lab12\\Lab12\\bin\\Debug\\test.txt",
-                "D:\\Study\\university\\3semester\\OOP\\Labs\\Lab12\\Lab12\\bin\\Debug\\Test\\test.txt");
-            KVVFileManager.ZipFiles("D:\\Study\\university\\3semester\\OOP\\Labs\\Lab12\\Lab12\\bin\\Debug\\Test",
-                "D:\\Study\\university\\3semester\\OOP\\Labs\\Lab12\\Lab12\\bin\\Debug\\zip.zip",
-                "D:\\Study\\university\\3semester\\OOP\\Labs\\Lab12\\Lab12\\bin\\Debug\\Norm");
+            KVVFileManager.CopyFile("D:\\Study\\university\\3semester\\OOP\\Labs\\Lab12\\Lab12\\bin\\Debug\\net6.0\\test.txt",
+                "D:\\Study\\university\\3semester\\OOP\\Labs\\Lab12\\Lab12\\bin\\Debug\\net6.0\\Test\\text.txt");
+            KVVFileManager.ZipFiles("D:\\Study\\university\\3semester\\OOP\\Labs\\Lab12\\Lab12\\bin\\Debug\\net6.0\\Test",
+                "D:\\Study\\university\\3semester\\OOP\\Labs\\Lab12\\Lab12\\bin\\Debug\\net6.0\\zip.zip",
+                "D:\\Study\\university\\3semester\\OOP\\Labs\\Lab12\\Lab12\\bin\\Debug\\net6.0\\Norm");
 
         }
     }

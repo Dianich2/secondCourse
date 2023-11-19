@@ -61,12 +61,6 @@ namespace Lab11
             }
         }
 
-        public static void Invoke(object obj, string className, string methodName, object[] params_)
-        {
-            Type t = Type.GetType(className);
-            var handler = t.GetMethod(methodName);
-            handler.Invoke(obj, new object[] { });
-        }
         public static T Create<T>() where T : new()
         {
             T ob = new T();
@@ -116,9 +110,6 @@ namespace Lab11
                 text = reader.ReadToEnd();
                 Console.WriteLine(text);
             }
-            string[] words = text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            //Reflector.Invoke(person, words[0], words[1], params_: null);
-            //Console.ReadLine();
         }
     }
 }
