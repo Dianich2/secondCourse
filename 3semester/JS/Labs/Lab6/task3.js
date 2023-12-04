@@ -40,4 +40,7 @@ messages.map(function(message){
     message.text = "Hello user";
 })
 
+messages[1].text = "Some new text";
+console.log(messages[1]);
+
 console.log(messages);
