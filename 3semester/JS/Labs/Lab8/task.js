@@ -134,6 +134,15 @@ let user7 = {
     }
 };
 
+// let user7Clone2 = {...user7};
+// user7Clone2.studies = {...user7.studies};
+// user7Clone2.studies.department = {...user7.studies.department};
+// user7Clone2.studies.exams[0] = {...user7.studies.exams[0]};
+// user7Clone2.studies.exams[1] = {...user7.studies.exams[1]};
+// console.log(JSON.stringify(user7Clone2, null, 2));
+// console.log();
+
+
 let store = {
     state: {
         profilePage: {
@@ -169,8 +178,6 @@ let store = {
 
 //console.log(JSON.stringify(user7SecondCopy, null, 2));
 //console.log(JSON.stringify(user7, null, 2));
-
-
 
 function deepClone(obj) {
     if (obj === null || typeof obj !== 'object') {
