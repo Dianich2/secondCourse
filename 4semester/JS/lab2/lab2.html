@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наперсток и шарик</title>
+  <style>
+    label{
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    input[type="number"]{
+        width: 50px;
+    }
+  </style>
+</head>
+<body>
+    <form id="sizeForm">
+        <label for="heightInput">Высота наперстка</label>
+        <input type="number" name="heightInput" id="heightInput"><br>
+        <label for="widthInput">Ширина наперстка</label>
+        <input type="number" name="widthInput" id="widthInput"><br>
+        <label for="diametrInput">Диаметр шарика</label>
+        <input type="number" name="diametrInput" id="diametrInput"><br>
+        <input type="submit" id="submitButton" value="Сохранить">
+    </form>
+
+    <label for="result" style="margin-top: 20px; margin-bottom: 50px;">Результат:</label>
+    <input type="text" name="result" id="result" readonly style="width: 40px;">
+
+  <div>
+    <img src="m.png"  width= "200" height = "180" id="nap1" style="margin-right: 20px; margin-left: 100px;">
+    <img src="m.png"  width= "200" height = "180" id="nap2" style="margin-right: 20px;">
+    <img src="m.png"  width= "200" height = "180" id="nap3">
+  </div>
+
+  <input type="button" id="resetButton" value="Обновить" style="margin-left: 400px; margin-top: 30px;">
+  <script src="lab2.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workerList>
+    <Engineer>
+        <surname>Employee1</surname>
+        <name>1</name>
+        <age>20</age>
+        <salary>5</salary>
+        <experience>3</experience>
+    </Engineer>
+    <SysAdmin>
+        <surname>Employee2</surname>
+        <name>2</name>
+        <age>28</age>
+        <salary>3000</salary>
+        <experience>6</experience>
+    </SysAdmin>
+    <Programmer>
+        <surname>Employee3</surname>
+        <name>3</name>
+        <age>27</age>
+        <salary>4000</salary>
+        <experience>7</experience>
+        <type>ProgType.Middle</type>
+    </Programmer>
+    <Programmer>
+        <surname>Employee4</surname>
+        <name>4</name>
+        <age>30</age>
+        <salary>4500</salary>
+        <experience>10</experience>
+        <type>ProgType.Senior</type>
+    </Programmer>
+    <Programmer>
+        <surname>Employee5</surname>
+        <name>5</name>
+        <age>29</age>
+        <salary>4500</salary>
+        <experience>10</experience>
+        <type>ProgType.Senior</type>
+    </Programmer>
+</workerList>

@@ -1,0 +1,40 @@
+[
+  {
+    "surname": "Employee1",
+    "name": "1",
+    "age": 20,
+    "salary": 5,
+    "experience": 3
+  },
+  {
+    "surname": "Employee2",
+    "name": "2",
+    "age": 28,
+    "salary": 3000,
+    "experience": 6
+  },
+  {
+    "type": "Middle",
+    "surname": "Employee3",
+    "name": "3",
+    "age": 27,
+    "salary": 4000,
+    "experience": 7
+  },
+  {
+    "type": "Senior",
+    "surname": "Employee4",
+    "name": "4",
+    "age": 30,
+    "salary": 4500,
+    "experience": 10
+  },
+  {
+    "type": "Senior",
+    "surname": "Employee5",
+    "name": "5",
+    "age": 29,
+    "salary": 4500,
+    "experience": 10
+  }
+]
