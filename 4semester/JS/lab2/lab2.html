@@ -12,6 +12,13 @@
     input[type="number"]{
         width: 50px;
     }
+    #circle{
+      position: relative;
+      z-index: -1;
+    }
+    img{
+      position: relative;
+    }
   </style>
 </head>
 <body>
@@ -25,13 +32,15 @@
         <input type="submit" id="submitButton" value="Сохранить">
     </form>
 
-    <label for="result" style="margin-top: 20px; margin-bottom: 50px;">Результат:</label>
-    <input type="text" name="result" id="result" readonly style="width: 40px;">
+    <label for="resultInput" style="margin-top: 20px; margin-bottom: 50px;">Результат:</label>
+    <input type="text" name="resultInput" id="resultInput" readonly style="width: 40px; margin-bottom: 250px;">
+    <span style="color: red; font-size: 20px; margin-left: 270px;" id="message"></span>
 
   <div>
     <img src="m.png"  width= "200" height = "180" id="nap1" style="margin-right: 20px; margin-left: 100px;">
     <img src="m.png"  width= "200" height = "180" id="nap2" style="margin-right: 20px;">
     <img src="m.png"  width= "200" height = "180" id="nap3">
+    <img src="f.png" width="50" height="50" id="circle">
   </div>
 
   <input type="button" id="resetButton" value="Обновить" style="margin-left: 400px; margin-top: 30px;">

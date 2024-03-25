@@ -71,9 +71,11 @@ public class Company implements Serializable {
             LOG.info("Поиск по опыту работы");
         }
     }
+
     public ArrayList<Worker> getStaff() {
         return staff;
     }
+
     public void addWorker(Worker worker) {
         if (worker == null) {
             LOG.warning("Сотрудник не существует");
