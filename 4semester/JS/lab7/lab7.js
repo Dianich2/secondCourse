@@ -8,6 +8,7 @@ myPromise.then(
 );
 
 
+
 function myFunction(delay){
     return new Promise(function(resolve, reject){
         let randomNumber = Math.floor(Math.random() * 10) + 1;
@@ -26,7 +27,6 @@ let myPromise2 = new Promise((resolve, reject) => {
 myPromise2
     .then(result => {
     console.log(result);
-    return result * 2;
 })
     .then(result => 
         console.log(result)

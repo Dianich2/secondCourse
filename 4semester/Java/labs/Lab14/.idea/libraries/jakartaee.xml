@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jakartaee">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Progtam files1/glassfish7/glassfish/lib/jakartaee.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="jar://$PROJECT_DIR$/../../../../../../Progtam files1/glassfish7/glassfish/lib/jakartaee.jar!/" recursive="false" />
+  </library>
+</component>

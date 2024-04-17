@@ -16,7 +16,7 @@ public class LoggingFilter implements Filter {
     static {
         try {
             LOGGER.setUseParentHandlers(false);
-            FileHandler fileHandler = new FileHandler("D:\\Study\\university\\4semester\\Java\\labs\\lab8\\lab9-10\\application.log");
+            FileHandler fileHandler = new FileHandler("D:\\Study\\university\\4semester\\Java\\labs\\lab9\\lab9-10\\application.log");
 
             SimpleFormatter formatter = new SimpleFormatter();
             fileHandler.setFormatter(formatter);

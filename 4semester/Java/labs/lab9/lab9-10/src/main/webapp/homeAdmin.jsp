@@ -12,7 +12,7 @@
   obj.toString();
 %>--%>
   <h1>Welcome ${username} role: ${role} ${welcomeMessage}          <a href="login.jsp">Log out</a></h1>
-  <h2>You team</h2>
+  <h2>Your team</h2>
   <table border="1">
     <tr>
       <th>Name</th>

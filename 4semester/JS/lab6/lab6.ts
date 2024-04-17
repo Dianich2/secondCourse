@@ -82,7 +82,7 @@ let student2: StudentType={
     name: "student 2",
     group: 4,
     marks: [
-        {subject: "Java", mark:5, passed:true},
+        {subject: "Java", mark:10, passed:true},
         {subject: "JS", mark:3, passed:false},
         {subject: "OOP", mark:6, passed:true}
     ]
@@ -113,4 +113,5 @@ let Group:GroupType = {
 // Group.deleteStudent(1);
 // console.log(Group.students);
 // console.log("----");
+console.log(Group.marksFilter(10));
 

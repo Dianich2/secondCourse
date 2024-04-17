@@ -3,6 +3,7 @@ import org.example.emploee.Employee;
 import org.example.emploee.Positions;
 import org.example.exception.MyException;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -34,8 +35,9 @@ public class CompanyTest {
         Assertions.assertTrue(myCompany.employees.contains(em1));
     }
 
-    @Test
+
     @DisplayName("Check the correct firing the employee method")
+    @Test
     void fireEmployeeTestSuccess() throws MyException {
         Company myCompany = new Company("myCompany");
         Employee em1 = new Employee("employy1", 5000, true, Positions.MIDDLE);
