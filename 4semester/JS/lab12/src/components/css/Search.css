@@ -1,0 +1,35 @@
+form {
+    margin-top: 20px;
+  }
+  .searchInput {
+    width: 200px;
+    height: 35px;
+    padding-left: 15px;
+    border-radius: 42px;
+    border: 2px solid #324b4e;
+    background: #F9F0DA;
+    outline: none;
+    position: relative;
+    transition: .3s linear;
+  }
+  .searchInput:focus {
+    width: 250px;
+  }
+  
+.input-field{
+    margin-left: 600px;
+}
+
+.btn-search-btn {
+  margin-left: 10px;
+  width: 70px;
+  height: 40px;
+  background-color: #F9F0DA;
+  box-shadow: 0 5px 15px 0 #b0d157;
+  transition: 0.5s;
+}
+
+.btn-search-btn:hover {
+  transform: translate(0,-3px);
+  box-shadow: 0 20px 40px 0 #b0d157;
+}

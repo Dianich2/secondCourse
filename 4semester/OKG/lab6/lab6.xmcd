@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?validation-md5-digest 01974d84ea6a611bdad7739647320314?>
+<?validation-md5-digest dc2dc258042409f440b3cb90ff607463?>
 <worksheet version="3.0.3" xmlns="http://schemas.mathsoft.com/worksheet30" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ws="http://schemas.mathsoft.com/worksheet30" xmlns:ml="http://schemas.mathsoft.com/math30" xmlns:u="http://schemas.mathsoft.com/units10" xmlns:p="http://schemas.mathsoft.com/provenance10">
 	<pointReleaseData/>
 	<metadata>
@@ -13,9 +13,9 @@
 			<revisedBy>user</revisedBy>
 		</userData>
 		<identityInfo>
-			<revision>5</revision>
+			<revision>6</revision>
 			<documentID>21666085-FBBB-4039-BBE2-A87E9CC8E670</documentID>
-			<versionID>BF87ABCA-3529-4842-BD1E-56EB89D08E85</versionID>
+			<versionID>F9901548-ABC4-450E-8F63-23F67F170B57</versionID>
 			<parentVersionID>00000000-0000-0000-0000-000000000000</parentVersionID>
 			<branchID>00000000-0000-0000-0000-000000000000</branchID>
 		</identityInfo>
@@ -501,48 +501,33 @@
 		</region>
 		<region region-id="1484" left="108" top="466.5" width="60" height="31.5" align-x="121.5" align-y="486" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
-				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831364" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
-						<hash/>
-					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832364" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
-						<hash/>
-					</parentRef>
-					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
-					<originComment xmlns="http://schemas.mathsoft.com/provenance10"/>
-					<contentHash xmlns="http://schemas.mathsoft.com/provenance10">d46a35ecd5180d9bd89768ef4e6f2935</contentHash>
-					<ml:define>
-						<ml:id xml:space="preserve">ϕ</ml:id>
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">ϕ</ml:id>
+					<ml:apply>
+						<ml:mult/>
 						<ml:apply>
-							<ml:mult/>
-							<ml:apply>
-								<ml:div/>
-								<ml:id xml:space="preserve" subscript="grad">ϕ</ml:id>
-								<ml:real>180</ml:real>
-							</ml:apply>
-							<ml:id xml:space="preserve">π</ml:id>
+							<ml:div/>
+							<ml:id xml:space="preserve" subscript="grad">ϕ</ml:id>
+							<ml:real>180</ml:real>
 						</ml:apply>
-					</ml:define>
-				</ml:provenance>
+						<ml:id xml:space="preserve">π</ml:id>
+					</ml:apply>
+				</ml:define>
 			</math>
-			<rendering item-idref="15">
-				<element-image-map>
-					<box left="1.5" top="0.75" width="58.5" height="30" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
-				</element-image-map>
-			</rendering>
+			<rendering item-idref="15"/>
 		</region>
 		<region region-id="1323" left="24" top="506.25" width="174.75" height="12" align-x="37.5" align-y="516" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Вектор нормали к секущей плоскости</p>
 			</text>
 		</region>
-		<region region-id="1485" left="48" top="531.75" width="110.25" height="18" align-x="62.25" align-y="546" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1638" left="48" top="531.75" width="110.25" height="18" align-x="62.25" align-y="546" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416830004" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178190228" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833244" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178190348" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -581,10 +566,10 @@
 		<region region-id="1486" left="48" top="591" width="27.75" height="16.5" align-x="63" align-y="600" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="3C91956F-0D3F-45B8-B209-6A4282C5C2CF" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832404" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="3C91956F-0D3F-45B8-B209-6A4282C5C2CF" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178190708" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833244" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178190348" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -605,10 +590,10 @@
 		<region region-id="1487" left="102" top="591" width="29.25" height="16.5" align-x="118.5" align-y="600" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="3C91956F-0D3F-45B8-B209-6A4282C5C2CF" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832564" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="3C91956F-0D3F-45B8-B209-6A4282C5C2CF" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178190748" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833284" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178190548" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -734,10 +719,10 @@
 		<region region-id="1492" left="48" top="741" width="62.25" height="12.75" align-x="69" align-y="750" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833244" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178190348" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832404" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178190708" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -878,10 +863,10 @@
 		<region region-id="1500" left="48" top="999" width="62.25" height="12.75" align-x="69" align-y="1008" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831084" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191508" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831124" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178192028" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1022,10 +1007,10 @@
 		<region region-id="1508" left="48" top="1257" width="62.25" height="12.75" align-x="69" align-y="1266" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178190348" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833164" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178190388" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1336,10 +1321,10 @@
 		<region region-id="1517" left="42" top="1827" width="79.5" height="16.5" align-x="72" align-y="1836" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="DF8E5F1C-F24F-46A6-9CAF-BFE8710E42DC" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833044" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="DF8E5F1C-F24F-46A6-9CAF-BFE8710E42DC" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178192348" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832884" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178190308" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1595,10 +1580,10 @@
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191548" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831884" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178192308" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1621,10 +1606,10 @@
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831884" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178192308" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416830964" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191708" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1696,10 +1681,10 @@
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191548" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832924" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191468" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1722,10 +1707,10 @@
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832924" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191468" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833244" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178192068" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1752,10 +1737,10 @@
 		<region region-id="1528" left="42" top="2271" width="47.25" height="16.5" align-x="67.5" align-y="2280" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832924" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191468" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831764" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191828" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1776,10 +1761,10 @@
 		<region region-id="1529" left="126" top="2271" width="48.75" height="16.5" align-x="153" align-y="2280" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191548" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191788" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1800,10 +1785,10 @@
 		<region region-id="1530" left="42" top="2295" width="48.75" height="16.5" align-x="69" align-y="2304" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832924" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191468" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831764" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191828" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1824,10 +1809,10 @@
 		<region region-id="1531" left="126" top="2295" width="50.25" height="16.5" align-x="154.5" align-y="2304" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191548" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191788" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1855,10 +1840,10 @@
 		<region region-id="1532" left="42" top="2373" width="87.75" height="16.5" align-x="70.5" align-y="2382" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831764" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191828" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191788" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1883,10 +1868,10 @@
 		<region region-id="1533" left="192" top="2373" width="58.5" height="16.5" align-x="210.75" align-y="2382" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831764" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191828" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832924" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191468" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1911,10 +1896,10 @@
 		<region region-id="1534" left="42" top="2397" width="92.25" height="16.5" align-x="72" align-y="2406" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831764" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191828" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191508" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1939,10 +1924,10 @@
 		<region region-id="1535" left="192" top="2397" width="63" height="16.5" align-x="212.25" align-y="2406" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831764" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191828" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832244" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191588" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1967,10 +1952,10 @@
 		<region region-id="1536" left="42" top="2422.5" width="48" height="31.5" align-x="57" align-y="2442" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831764" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191828" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191548" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1995,10 +1980,10 @@
 		<region region-id="1537" left="192" top="2422.5" width="51" height="31.5" align-x="208.5" align-y="2442" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831764" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191828" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191788" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2030,10 +2015,10 @@
 		<region region-id="1538" left="42" top="2496.75" width="142.5" height="53.25" align-x="69.75" align-y="2526" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832924" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191468" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191548" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2273,10 +2258,10 @@
 		<region region-id="1539" left="42" top="2595" width="75.75" height="16.5" align-x="67.5" align-y="2604" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832884" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17371764" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="178191508" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2342,10 +2327,10 @@
 		<region region-id="1541" left="42" top="2715.75" width="240" height="21.75" align-x="55.5" align-y="2730" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832804" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17371924" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833284" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17371964" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2382,10 +2367,10 @@
 		<region region-id="1542" left="42" top="2745.75" width="257.25" height="21.75" align-x="54.75" align-y="2760" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416831884" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372444" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832084" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372804" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2429,10 +2414,10 @@
 		<region region-id="1543" left="42" top="2811" width="85.5" height="16.5" align-x="70.5" align-y="2820" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="DF8E5F1C-F24F-46A6-9CAF-BFE8710E42DC" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833404" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="DF8E5F1C-F24F-46A6-9CAF-BFE8710E42DC" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372844" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372244" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2541,10 +2526,10 @@
 		<region region-id="1545" left="42" top="2937.75" width="117" height="21.75" align-x="61.5" align-y="2952" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832724" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372204" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372604" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2573,10 +2558,10 @@
 		<region region-id="1546" left="186" top="2937.75" width="122.25" height="21.75" align-x="204.75" align-y="2952" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832804" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372284" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833164" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17371844" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2783,10 +2768,10 @@
 		<region region-id="1552" left="42" top="3537" width="102.75" height="16.5" align-x="92.25" align-y="3546" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372844" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833404" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372244" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2901,10 +2886,10 @@
 		<region region-id="1555" left="42" top="3729" width="111.75" height="16.5" align-x="89.25" align-y="3738" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17371764" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832724" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17371964" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3019,10 +3004,10 @@
 		<region region-id="1558" left="42" top="3903" width="80.25" height="16.5" align-x="75.75" align-y="3912" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833164" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17371804" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372164" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3047,10 +3032,10 @@
 		<region region-id="1559" left="42" top="3945" width="102.75" height="16.5" align-x="92.25" align-y="3954" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833164" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17371804" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833404" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3165,10 +3150,10 @@
 		<region region-id="1562" left="42" top="4137" width="95.25" height="16.5" align-x="89.25" align-y="4146" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832284" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372444" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832564" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372844" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3198,10 +3183,10 @@
 		<region region-id="1563" left="42" top="4197" width="83.25" height="16.5" align-x="58.5" align-y="4206" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832164" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17371844" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833404" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3257,10 +3242,10 @@
 		<region region-id="1566" left="42" top="4263" width="83.25" height="16.5" align-x="58.5" align-y="4272" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832724" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372444" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372164" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3316,10 +3301,10 @@
 		<region region-id="1569" left="42" top="4329" width="80.25" height="16.5" align-x="58.5" align-y="4338" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833404" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17371684" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833164" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372004" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3375,10 +3360,10 @@
 		<region region-id="1572" left="42" top="4395" width="66.75" height="16.5" align-x="58.5" align-y="4404" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833364" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372844" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832284" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17371844" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3434,10 +3419,10 @@
 		<region region-id="1575" left="42" top="4461" width="123.75" height="16.5" align-x="58.5" align-y="4470" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832884" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17371684" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832604" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17371764" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3503,10 +3488,10 @@
 		<region region-id="1578" left="42" top="4545.75" width="248.25" height="21.75" align-x="60" align-y="4560" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832564" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372244" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416832724" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17372404" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3543,10 +3528,10 @@
 		<region region-id="1628" left="42" top="4581.75" width="265.5" height="21.75" align-x="59.25" align-y="4596" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833444" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17373684" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="416833564" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="17373884" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -5010,17 +4995,17 @@ GjHBKE6tsUYuDGnj8WW3xhPdUjfO2yPJedFOcrVlMlxsY1eiX+OJAuyluyXW8dL546OE6UwW
 recsk2FDH7d3bDwCofn8mrbQriFcbZkME2q0A30bj0BX0433GnK1ZTI0KIAcu/jujQfm+zDf
 VcFKpKZx5SWMBx4zztDadRWDeDBEsNXZZYw3eCWW5X/BGfYl2zkTMgAAAABJRU5ErkJg
 gg==</item>
-		<item item-id="85" content-encoding="gzip">H4sIAAAAAAAA/4xTy27TUBCd67fduElJAmntNE0bYIcqiwV0VUqFuuAhhQXtqnId0xo1TXBd
-FHaBH2HDN7BHfFiYh2MKK641npnjM3PP3NzUAEChvUXzONbx7aQfh+l5NrkygdZjNHc0SQQz
-GHtKtHHy5uxDmhSMwJDrNXxb1xfTg8lM4JdoNgLDivgK7QnabgPgC+4+XvuT06pZ4jXQdFZ3
-p9r8WVHk2dlNkSpm7KHV4fYy9rb/yk1uYBR5mgYMRGj+lEMrWv8JMDft6Bv6fcsRb7viHU+8
-uxJpuMkIz8c0PsMjnOgdimTwewUeEQg+l8zd1Yh0Hfikj8OvPm/ZiLxf+N1Zk5Y4sKZOcEBp
-hqmuncBzYjalk90SEc22+NZdpn5qU6XaBbjH+Y8qh44UttZFQgehDZHQYQmBJE1OQiFbXeke
-borv9kTfJk03W063JSorkM8B+tKiuy379RHakS36vMVARg7vS8sBCT0GeCDNBjTysYz8kC9P
-fRSdnufx9OL0/SQfx4XNXdp0Bxk+jItYftsNWN4TXHp5k3dIEseUefEsu37BfeTehnQjVcmV
-tcAHVPj/6LK5XeRxkkaHupxrSeypBqhALShSGGBRT2kq0LG0p3QVGAtCDPq0wMBUgTbfx08W
-cajKZg4GzrLcRQ6Xe8jh8hXkcHkNOVzuE4eqVpmDQZ04RBa59dc34zTPkvhSDsRh2UdoI8jw
-0cs/k1ee5j+rdjv5DQAA//8DACSwKrU4BAAA</item>
+		<item item-id="85" content-encoding="gzip">H4sIAAAAAAAA/4xTS1PTUBQ+N++EhhbbaiEppVB15zAZF8oKkXFY+JipC2HFhDRCHEprCE7d
+Vf+IG3+De8cfVs8jjejK2zm553z5vvO4ua0BgEJ7i+axr+PTST8O0/NscmUCrcdo7miSCGYw
+9pRo4+TN2Yc0KRiBIes1fFrXF9ODyUzgl2g2AsOK+ArtCdpuA+ALVh+v/Ylp1SxpSgNNZ+dO
+VfxZUeTZ2U2RKmbuodXh9jL2tv+KTU5gFHmaBgxEaP6UXSta/wkwN+3oG+77liO77crueLK7
+K5GGRUZ4PqbxGR7hRO+wSQa/V+ARgeCzZO6uRtTXgU/9sfvV55KNyPuF7501SYkDa+oEB5Rk
+GOraCTwnZlMy2S1potmWvXWXqZ/apFS7APc4/lHF0BFha11a6CC0IS10uIVAgiYHoZCtrmQP
+N2Xv9qS/TZputpxuS7qsQD4H6EuK7rbU6yO0IyX6XGIgI4f3JeWAGj0GeCDJBjTysYz8kC9P
+fRSdnufx9OL0/SQfx4XNWdp0Bxk+jItYvu1G+Y1JxfeWPvUOtcQ+RV48y65fcB65tyHdSFVy
+ZS3wByr8f3SZ3C7yOEmjQ13OtST2VANUoBbkKXRQ1FOaCnSU9pSuAmNBiEGvFuiYKtDm+/jK
+Ig6pbOag4yzlLnJY7iGH5SvIYXkNOSz3iUOqVeagUycOkaXd+uubcZpnSXwpB+Jw20doI8jw
+p5d/Jq88zX9W7XbwGwAA//8DACWoqIQ4BAAA</item>
 		<item item-id="86">iVBORw0KGgoAAAANSUhEUgAAAUkAAAE9CAYAAACGOZB/AAAAAXNSR0IArs4c6QAAAARnQU1B
 AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABiNSURBVHhe7Z0LduIwDEW7LhbEelgN
 m2ExTEyjIXFJyEe2JfneczJTUnCsp+fXBCj9eQIAwCKEJADACoQkAMAKhCQAwAqEJADACoQk
@@ -5140,17 +5125,17 @@ swAFWICQBCe8/x7Lfj4/lpCELRCS4ID0SdLX533p8niV5ccSkrAFQhLMc7++w21vsK0+dil0
 h/2Tv+4LnUNIgmnS84nzy+R0Zjh/C88SWx6bv7o97Dn0vCfEhZAEo4yB9nr/4vtvl7xCbXxP
 4zvcfp9znP+Rrq2PzfZP7g+QICQhDPffv7gPoAohCSF4DAF55xoZCkBIAgCsQEgCACzyfP4D
 vuPzAVZ64MIAAAAASUVORK5CYII=</item>
-		<item item-id="87" content-encoding="gzip">H4sIAAAAAAAA/4xTy27TUBCd67fduHmUBpobME1hiyqLDV21pUJd8JDCgrKqXMe0rggJrlul
-u4gfgQXfwB7xNf2KMA/HFFZcazwz554zM9e5aQCAQnuLFnBs4tvLPg+z03zyyQZaT9H80SQV
-zGLsGdHG6ZuT8ywtGYEh6w18Oxdn0/3JTOCXaC4Cw5r4Cu0bdt1uAdwgf9z+k9MKHfEGGCZP
-16mb75VlkZ9clplixg5aE24va2fwV25zAassskwzEFODKYdOvPETYG678Vf0u44n3vXFe4F4
-fyU2sMkIv49tXcMTPNE7gAaD32vwkEAIWTL3V2Oaaz+k+Tj8EnLLlqg8PJx6j3lb+G5HWrXX
-xHfuMO9qjXhqG2Cd8x91Dl0Rdu5Koy5C96RRlxttSNLmpCdkR0v1Xl+8vi8H69MZZsszPJAR
-a5BPC5GU0A+lX4TQprSIuMUgDn7hfm9LSg5o0COAR1IMU9M4gufEfMxXpDmKj0+LZHp2/GFS
-jJPS5SrrdNMYPkjKRH7BHixvAy6zuq9b1J9jyoJkll+84DpyO/t071TFlbXAB1T//9Flcbcs
-kjSLD0ze0hUxUi1QWi0oUhigKFKG0iZKI2UqbS0IsWhrgYGttDHfxS2HOKRymYOBt5T7yGF5
-gByWryCH5Q3ksDwkDqlWmYNBkzhElnGbry/HWZGnyUf5IB6PfYg2ghwfs/rLBNXX/Gc1bie/
-AQAA//8DAB2yrJMeBAAA</item>
+		<item item-id="87" content-encoding="gzip">H4sIAAAAAAAA/4xTS2/TQBCe9dtu3DxKA80GTFO4osriQk9tqVAPPKRwoJwq1zGtK0KC61bp
+LeKPwIHfwB3xa/orwjwcUzix1nhnvv2+mdn1ugEACu0tWsC+iW8v+zzMTvPJJxtoPEXzR5NU
+MIuxZ0Qbp29OzrO0ZASGrDfw7VycTfcnM4FforkIDGviK7RvWHW7BXCD/HH7T0wjdKQpAwyT
+nU5dfK8si/zksswUM3fQmnB7WDuDv2KbE1hlkWWagZgKTNl14o2fAHPbjb/ivOt4Mru+zF4g
+s78SG1hkhOdjW9fwBHf0DqDB4PcaPCQQQpbM/dWY+toPqT92v4RcsiUqDzen3mPcFr7bkVLt
+NZk7d5h3tUY8tQ2wzvGPOoauCDt3pVAXoXtSqMuFNiRoc9ATsqMle68vs74vG+vTHmbLPTyQ
+FmuQdwuRpNAPpV6E0KaUiLjEIA5+4XpvS1IOqNEjgEeSDEPTOILnxHzMV6Q5io9Pi2R6dvxh
+UoyT0uUs63TTGD5IykS+YK/6kqTi20kfdIvqs09RkMzyixecR25nn+6dqrgyFviA6v8/ukzu
+lkWSZvGByUu6IkaqBUqrBXkKHRRFylDaRGmkTKWtBSEWLS3QsZU25ru45BCHVC5z0PGWch85
+LA+Qw/IV5LC8gRyWh8Qh1Spz0GkSh8jSbvP15Tgr8jT5KAficduHaCPI8TGrXyaoTvOf0bgd
+/AYAAP//AwCfBvPEHgQAAA==</item>
 		<item item-id="88">iVBORw0KGgoAAAANSUhEUgAAAUkAAAE9CAYAAACGOZB/AAAAAXNSR0IArs4c6QAAAARnQU1B
 AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABW4SURBVHhe7d0Nlto6DIZh1sWCWA+r
 YTMshsYQDY5LQkjkWJLf55zc20lnIJbkr/xMp6cHAGAWIQkACwhJAFhASALAAkISABYQkgCw
@@ -5256,17 +5241,17 @@ LasS8mXxa58/CeZDIK4NYXSBkIQLz0d8lyG8vvzsv0/mvnYSoMAMQhJOvP89lt99/lpCEmsQ
 knAg/STpy+M29/R40fzXEpJYg5CEebfLO9x+DbbFr50L3eF89q/7onOEJExLrydOnyanR4bT
 b+GZs+Zry3e3hzObXvdEXIQkjBoD7fn9i+9/u+QZauP3NL7D7fWa4/Qf6Vr7tcX57POBhJBE
 GLfXv7gPqCIkEcJ9CMgbz5FRASEJAAsISQCY9Xj8A9SHStz5Rs8/AAAAAElFTkSuQmCC</item>
-		<item item-id="89" content-encoding="gzip">H4sIAAAAAAAA/4xSS2/TQBCetR2/GjePkkDjFLcBDtzAAiF6KqVCHHgpXMqpcm3TGhESXBf1
-GPFHuPATEHfEDzPfzphQOLGr2Zn59puZnd1tE5GCvIb4bJtY3fzjND8p5h9apMc9iJfNU8Es
-xh5q2ix9efwuTytGaMrxBlb77HSxP78Q+BnEATBdEZ9DXqHOokt0G+m2en98PTJbtEGGyafr
-r4o/qqqyOD6vcsWMXUiHLg9rd/KX3+IEVlXmechADAkWbNrx5g+iZcuJv0Dv2a5oxxPt+qK9
-tdhAkQr3YynzLt3BpDZj3wS7LxgFHLD01mN9qv1An47NzwEX7HLQVxetqTfwe8J3+lKotyG6
-f4V5nzY0TyHxgP3vK5+GEti/KoWGgK5JoSEX2hSnx85IyHYo2Udj0eGWtDXmFh5IC9elLcHi
-pq1IEoTbUi0CtCMFIi4wif2f2B/d4OBsoo95SHRTuoVrGof0WDNv8ffoZPHRSZksTo/ezstZ
-UjmcZaB/GcMHSZXI642aVzS2sZjNXx00j67Y85OL4uwJ55GfOdZ/TjVcGTUmqfH/o7+TO1WZ
-pHl8YPJW2BAj1SUVqlpbSoVoqY6UoUIToZEyVWjVGrHAoRpGC5zlHrZszdFRDnNguJqjyZ7O
-o8N9cDh8DRwOb4PD4QHXgrHOHBgdzdFkOW7nxfksL4s0eS8X4vKxn0IyKjDN5ub85jb/Ge3L
-zi8AAAD//wMASeaN1hoEAAA=</item>
+		<item item-id="89" content-encoding="gzip">H4sIAAAAAAAA/4xTTW/TQBCdtR3bcePmoyTQOMVtgAM3sECInkqpEAe+FC7lVLmJaYMICa6L
+eoz4I1z4CYg74oeZNzMmFE6sNTszb9/M7OyuG0RkIK8hgdg2Zj/7OMpOpvMPNeJxD1KfzMeK
+OYI9ZNps/PL4XTYuBKGRxFuY3bPTxf78QuFnEA/AaEV8DnmFOosW0W2k22r/8XlMXN2URZYt
+RmdV/FFR5NPj8yIzwtyFNOnycHaHf/k1SeAUeZZFAiSQcCGmm2z+IFrWvOQL9J7rq/bqqv1A
+dX0tsVCkwPk4xr5Ld/BRQ7Bvit1XjEIJWNbXE97Vfsi7E/NzKAVbEvTVR2vmDfy28r2OFmpv
+qO5cEd6nDeYZJO6K/33lU08DO1e1UA/QNS3Uk0Kb6rTF6SvZjTR7f6A62tK2BtLCA23hural
+WFK1FWuCaFurxYB2tEAsBYZJ8BPr/RsSPBnyNg+Jbmq3cG3rkB4z85Y8j+YkOTrJ08Xp0dt5
+PksLT7J0+ZUJfJAWqd5ev7pFaxuTXb3VbnXpRrwgvZiePZE8+jIH/OZMxdVR4iMz+H/0d3Kv
+yNNxlhzYshRVxNi0yESmZMuYCC2VsbFMZCM0NraJnJIRBxwqYdTAWe5hyWUOR3nCgeEzh8l1
+zsPhATgSvgaOhDfAkfBQasFYFw6MJnOYrNttvjifZfl0nL7XA/Fl20/5l6IpPrs6uaA6zX9G
+47LzCwAA//8DAC1OH9caBAAA</item>
 		<item item-id="90">iVBORw0KGgoAAAANSUhEUgAAANkAAACtCAYAAAA9DdqhAAAAAXNSR0IArs4c6QAAAARnQU1B
 AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAzPSURBVHhe7Z0NduIwDIQ5FwfiPJyG
 y3AY1gpR43hj8ifZkjLfe+4Wl1jWWEOclKW3DwBAFZgMAGVgMgCUgckAUAYmA0AZmAwAZWAy

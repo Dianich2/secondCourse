@@ -65,7 +65,7 @@ public class HomeAdminServlet extends HttpServlet {
             req.getRequestDispatcher("homeAdmin.jsp").forward(req, resp);
 
         }else {
-            System.out.println("Notheing");
+            System.out.println("Nothing");
         }
     }
 }
