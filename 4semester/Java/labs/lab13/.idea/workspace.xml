@@ -10,77 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28a41262-ed9a-4320-8098-a7a4e4efa90a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../JS/lab8/.idea/lab8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab13n/.idea/Lab13.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Builder/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Builder/BuilderFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Builder/UnivClassBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Builder/UserBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Command/AddNewClassCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Command/AuthConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Command/CommandResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Command/Factory/CommandFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Command/Factory/CommandType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Command/LoginCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Command/LoginPageCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Command/RegisterNewUserCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Command/RegisterPageCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Command/SingOutCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Command/WelcomeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Connection/ConnectionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Controller/ControllerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Exceptions/IncorrectDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Exceptions/RepositoryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Exceptions/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Filters/EncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Filters/LoginRequiredFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Models/UniversityClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Repository/AbstractRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Repository/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Repository/RepositoryCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Repository/SQLHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Repository/UnivClassRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Repository/dbconstants/UnivClassTableConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Repository/dbconstants/UserTableConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Repository/paramspecification/Parameter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Repository/paramspecification/UserByLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/Repository/paramspecification/UserByLoginPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/services/UniversityClassService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/util/HashPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/java/by/belstu/lab13/util/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/webapp/errorPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/webapp/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/webapp/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/webapp/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/webapp/styles/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/webapp/styles/mainPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab13/src/main/webapp/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JS/lab3/lab3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JS/lab3/lab3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JS/lab6/lab6.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JS/lab6/lab6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JS/lab6/lab6.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JS/lab6/lab6.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../JS/lab7/lab7.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JS/lab7/lab7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java12_JSTL.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab9/lab9-10/src/main/java/com/example/lab910/filters/LoggingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab9/lab9-10/src/main/java/com/example/lab910/filters/LoggingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MathProgramming/Лаб4_ДинамическоеПрограммирование.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../OKG/ЛР_4_MCD.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../OKG/ЛР_5_C++.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MathProgramming/отчёт.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MathProgramming/отчёт.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReqDev/Задани_ 6 Составление спецификации.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +84,21 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -187,6 +134,8 @@
       <workItem from="1711565824708" duration="926000" />
       <workItem from="1711566793505" duration="11000" />
       <workItem from="1711566909315" duration="81000" />
+      <workItem from="1715953664742" duration="48000" />
+      <workItem from="1715955214849" duration="1176000" />
     </task>
     <servers />
   </component>
