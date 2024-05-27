@@ -10,9 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28a41262-ed9a-4320-8098-a7a4e4efa90a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MathProgramming/отчёт.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MathProgramming/отчёт.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqDev/Задани_ 6 Составление спецификации.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab14/.idea/Lab14.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab14/.idea/Lab14.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab14/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab14/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UserInterfaceDesign/lab2/Лабораторная работа №2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UserInterfaceDesign/lab2/Лабораторная работа №3_ПОИТ.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../UserInterfaceDesign/lab2/Лабораторная работа №4_ПОИТ.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +86,39 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50526" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -136,6 +171,7 @@
       <workItem from="1711566909315" duration="81000" />
       <workItem from="1715953664742" duration="48000" />
       <workItem from="1715955214849" duration="1176000" />
+      <workItem from="1716558494037" duration="207000" />
     </task>
     <servers />
   </component>
